@@ -38,7 +38,6 @@ public class ComprasAction extends BaseActions {
 	}
 	
 	public boolean verificarCarrinho() {
-		driver.findElement(By.xpath("//a[@class='nav-a nav-a-2']")).click();
 		WebElement btnFecharPedido = driver.findElement(By.xpath("//div[@class='a-box a-color-alternate-background sc-buy-box-inner-box']"));
 		boolean validaCarrinho = btnFecharPedido.isDisplayed();
 		return validaCarrinho;

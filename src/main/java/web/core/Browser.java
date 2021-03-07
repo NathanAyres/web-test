@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Browser implements IBrowser {
 
 	private static WebDriver driver;
-	private static String URL_BASE = "https://www.amazon.com.br/";
+	private static String URL_BASE = "https://auditeste.com.br/";
     public WebDriverWait wait;
 
 	public void setupBrowser() throws IOException {
