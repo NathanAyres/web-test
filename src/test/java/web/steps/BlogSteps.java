@@ -10,16 +10,17 @@ import web.core.ThreadDriver;
 import web.core.Utils;
 
 public class BlogSteps {
-	BlogAction contato = new BlogAction(ThreadDriver.getTDriver());
+	
+	BlogAction blog = new BlogAction(ThreadDriver.getTDriver());
 	
 	@Quando("^clico no menu blog$")
-	public void valido_a_pesquisa() throws Throwable {
-		contato.abrirMenu();
+	public void clico_no_menu_blog() throws Throwable {
+		blog.abrirMenu();
 	}
 	
 	@Entao("^valido que estou na tela blog$")
-	public void valido_que_estou_na_tela_de_contato() throws Throwable {
-		//Assert.assertTrue(compras.verificarCarrinho());
+	public void valido_que_estou_na_tela_blog() throws Throwable {
+		blog.validarTela("//BLOG");
 	}
 
 }

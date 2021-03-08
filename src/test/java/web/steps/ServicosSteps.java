@@ -1,13 +1,13 @@
 package web.steps;
 
 
-
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import web.actions.ServicosAction;
 import web.core.ThreadDriver;
 
 public class ServicosSteps {
+	
 	ServicosAction servicos = new ServicosAction(ThreadDriver.getTDriver());
 	
 	@Quando("^clico no menu servicos$")

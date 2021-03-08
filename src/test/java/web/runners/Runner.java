@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/", glue = "web.steps", 
-				 tags = {"@MENUSERVICOS" },
+				 tags = {"@MENUCONTATO" },
 				 plugin = { "pretty", "html:target/report-html","json:target/report.json" },
 				 monochrome = true,  
 				 dryRun = false, strict = false)

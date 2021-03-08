@@ -1,5 +1,7 @@
 package web.actions;
 
+import static org.junit.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,22 +12,21 @@ public class BlogAction extends BaseActions{
 		super(driver);
 	}
 	
-	public void fecharPopUp() {
-		//WebElement popUp = driver.findElement(By.id("menu-item-130"));NÃO TEM ID
-		//popUp.click();
-
-	}
-	
 	public void abrirMenu() {
-		WebElement menuContato = driver.findElement(By.id("menu-item-130"));
-		menuContato.click();
+		WebElement menuBlog = driver.findElement(By.xpath("//*[@id=\"menu-item-1477\"]/a"));
+		menuBlog.click();
 
 	}
 	
-	public boolean verificarContato() {
-		driver.findElement(By.xpath("//div[@class='nav-a nav-a-2']")).click();
-		WebElement btnFecharPedido = driver.findElement(By.xpath("//div[@class='a-box a-color-alternate-background sc-buy-box-inner-box']"));
-		boolean validaCarrinho = btnFecharPedido.isDisplayed();
-		return validaCarrinho;
+	public void validarTela(String string) throws Exception {
+		WebElement labelTela = driver.findElement(By.xpath("//*[@id=\"wrapper\"]/div/div[1]/div/div/div/h1"));
+		String tela = labelTela.getText();
+		string.toUpperCase();
+		string = string.toUpperCase();
+		if(tela.contains(string)){
+			assertTrue(true);
+		}else {
+			throw new Exception("Erro ao validar Tela");
+		}
 	}
 }

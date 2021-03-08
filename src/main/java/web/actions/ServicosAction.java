@@ -18,8 +18,8 @@ public class ServicosAction extends BaseActions{
 	}
 	
 	public void abrirMenu() {
-		WebElement menuContato = driver.findElement(By.xpath("//*[@id=\"menu-item-290\"]/a"));
-		menuContato.click();
+		WebElement menuServicos = driver.findElement(By.xpath("//*[@id=\"menu-item-290\"]/a"));
+		menuServicos.click();
 
 	}
 	public void clicarSubMenu(String string) {
@@ -31,6 +31,7 @@ public class ServicosAction extends BaseActions{
 		WebElement labelTela = driver.findElement(By.xpath("//div/h1[contains(text(),'"+string+"')]"));
 		String tela = labelTela.getText();
 		string.toUpperCase();
+		string = string.toUpperCase();
 		if(tela.contains(string)){
 			assertTrue(true);
 		}else {

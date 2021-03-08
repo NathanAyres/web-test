@@ -11,16 +11,16 @@ import web.core.Utils;
 
 public class CasesDeSucessoSteps {
 	
-	CasesDeSucessoAction contato = new CasesDeSucessoAction(ThreadDriver.getTDriver());
+	CasesDeSucessoAction casesDeSucesso = new CasesDeSucessoAction(ThreadDriver.getTDriver());
 
 		@Quando("^clico no menu cases de sucesso$")
-		public void valido_a_pesquisa() throws Throwable {
-			contato.abrirMenu();
+		public void clico_no_menu_cases_de_sucesso() throws Throwable {
+			casesDeSucesso.abrirMenu();
 		}
 		
 		@Entao("^valido que estou na tela cases de sucesso$")
 		public void valido_que_estou_na_tela_de_contato() throws Throwable {
-			//Assert.assertTrue(Compras.verificarCarrinho());
+			casesDeSucesso.validarTela("//CASES DE SUCESSO");
 		}
 
 	}

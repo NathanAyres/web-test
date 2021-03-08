@@ -15,13 +15,13 @@ public class ContatoSteps {
 
 
 	@Quando("^clico no menu contato$")
-	public void valido_a_pesquisa() throws Throwable {
+	public void clico_no_menu_contato() throws Throwable {
 		contato.abrirMenu();
 	}
 	
 	@Entao("^valido que estou na tela contato$")
 	public void valido_que_estou_na_tela_de_contato() throws Throwable {
-		
+		contato.validarTela("//CONTATO");
 	}
 
 }

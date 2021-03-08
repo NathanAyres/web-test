@@ -9,17 +9,17 @@ import web.core.ThreadDriver;
 import web.core.Utils;
 
 public class QuemSomosSteps {
-	QuemSomosAction contato = new QuemSomosAction(ThreadDriver.getTDriver());
+	QuemSomosAction quemSomos = new QuemSomosAction(ThreadDriver.getTDriver());
 		
 	
 		@Quando("^clico no menu quem somos$")
-		public void valido_a_pesquisa() throws Throwable {
-			contato.abrirMenu();
+		public void clico_no_menu_quem_somos() throws Throwable {
+			quemSomos.abrirMenu();
 		}
 		
 		@Entao("^valido que estou na tela quem somos$")
-		public void valido_que_estou_na_tela_de_contato() throws Throwable {
-			
+		public void valido_que_estou_na_tela_quem_somos() throws Throwable {
+			quemSomos.validarTela("//QUEM SOMOS");
 		}
 
 }
