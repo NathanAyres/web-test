@@ -1,18 +1,13 @@
 [
   {
-    "comments": [
-      {
-        "line": 1,
-        "value": "#language: pt"
-      }
-    ],
     "line": 3,
     "elements": [
       {
+        "start_timestamp": "2021-03-08T02:10:03.471Z",
         "before": [
           {
             "result": {
-              "duration": 7005680100,
+              "duration": 9268056300,
               "status": "passed"
             },
             "match": {
@@ -20,14 +15,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "Pesquisar um item e adicionar ao carrinho",
+        "line": 19,
+        "name": "Clicar no menu servicos e no submenu testes automatizados e validar a pagina",
         "description": "",
-        "id": "adicionar-um-item-ao-carrinho;pesquisar-um-item-e-adicionar-ao-carrinho",
+        "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais;clicar-no-menu-servicos-e-no-submenu-testes-automatizados-e-validar-a-pagina;;2",
         "after": [
           {
             "result": {
-              "duration": 1101385200,
+              "duration": 684191000,
               "status": "passed"
             },
             "match": {
@@ -36,74 +31,909 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Cenario",
+        "keyword": "Esquema do Cenario",
         "steps": [
           {
             "result": {
-              "duration": 4241592000,
+              "duration": 103750500,
               "status": "passed"
             },
             "line": 11,
-            "name": "que pesquiso um iten no e-comerce amazon",
+            "name": "que estou na home",
             "match": {
-              "location": "ComprasSteps.que_pesquiso_um_iten_no_e_comerce_amazon()"
+              "location": "HomeSteps.que_estou_na_home()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 74569700,
+              "duration": 74175600,
               "status": "passed"
             },
             "line": 12,
-            "name": "valido a pesquisa",
+            "name": "clico no menu servicos",
             "match": {
-              "location": "ComprasSteps.valido_a_pesquisa()"
+              "location": "ServicosSteps.clico_no_menu_servicos()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 94060500,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027a-section aok-relative s-image-fixed-height\u0027]/img[@src\u003d\u0027https://m.media-amazon.com/images/I/61Rr8uxmREL._AC_UY218_ML3_.jpg\u0027]\"}\n  (Session info: chrome\u003d89.0.4389.72)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-DB2QFK7\u0027, ip: \u0027192.168.0.20\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\\Users\\natha\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bf2fa4fbd2168dab22124d34ecadcdb1\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027a-section aok-relative s-image-fixed-height\u0027]/img[@src\u003d\u0027https://m.media-amazon.com/images/I/61Rr8uxmREL._AC_UY218_ML3_.jpg\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat web.actions.ComprasAction.selecionarProduto(ComprasAction.java:31)\r\n\tat web.steps.ComprasSteps.adiciono_esse_item_ao_carrinho(ComprasSteps.java:28)\r\n\tat ✽.Entao adiciono esse item ao carrinho(compras.feature:13)\r\n",
-              "status": "failed"
+              "duration": 4744605600,
+              "status": "passed"
             },
             "line": 13,
-            "name": "adiciono esse item ao carrinho",
+            "name": "no submenu \"Testes Automatizados\"",
             "match": {
-              "location": "ComprasSteps.adiciono_esse_item_ao_carrinho()"
+              "arguments": [
+                {
+                  "val": "\"Testes Automatizados\"",
+                  "offset": 11
+                }
+              ],
+              "location": "ServicosSteps.no_submenu(String)"
             },
-            "keyword": "Entao "
+            "keyword": "E "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "java.lang.Exception: Erro ao validar Tela\r\n\tat web.actions.ServicosAction.validarTela(ServicosAction.java:36)\r\n\tat web.steps.ServicosSteps.valido_que_estou_na_tela_de(ServicosSteps.java:25)\r\n\tat ✽.valido que estou na tela de \"//Testes Automatizados\"(file:src/test/resources/features/servicos.feature:14)\r\n",
+              "duration": 71183916200,
+              "status": "failed"
             },
             "line": 14,
-            "name": "valido se o iten se encontra no carrinho",
+            "name": "valido que estou na tela de \"//Testes Automatizados\"",
             "match": {
-              "location": "ComprasSteps.valido_se_o_iten_se_encontra_no_carrinho()"
+              "arguments": [
+                {
+                  "val": "\"//Testes Automatizados\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ServicosSteps.valido_que_estou_na_tela_de(String)"
             },
-            "keyword": "E "
+            "keyword": "Entao "
           }
         ],
         "tags": [
           {
-            "line": 9,
-            "name": "@COMPRAS"
+            "name": "@funcionais"
+          },
+          {
+            "name": "@MENUSERVICOS"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T02:11:29.600Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7256563900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Clicar no menu servicos e no submenu testes automatizados e validar a pagina",
+        "description": "",
+        "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais;clicar-no-menu-servicos-e-no-submenu-testes-automatizados-e-validar-a-pagina;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 704613400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 65503500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na home",
+            "match": {
+              "location": "HomeSteps.que_estou_na_home()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 67445900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no menu servicos",
+            "match": {
+              "location": "ServicosSteps.clico_no_menu_servicos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027Testes Funcionais N Funcionais\u0027)]\"}\n  (Session info: chrome\u003d88.0.4324.190)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-CFU3QO9\u0027, ip: \u0027192.168.15.189\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\DELL\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62922}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9a67962257b2de1c32396509c0119687\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(text(),\u0027Testes Funcionais N Funcionais\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat web.actions.ServicosAction.clicarSubMenu(ServicosAction.java:26)\r\n\tat web.steps.ServicosSteps.no_submenu(ServicosSteps.java:20)\r\n\tat ✽.no submenu \"Testes Funcionais N Funcionais\"(file:src/test/resources/features/servicos.feature:13)\r\n",
+              "duration": 33104000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "no submenu \"Testes Funcionais N Funcionais\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testes Funcionais N Funcionais\"",
+                  "offset": 11
+                }
+              ],
+              "location": "ServicosSteps.no_submenu(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 370500,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "valido que estou na tela de \"//Testes Funcionais N Funcionais\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//Testes Funcionais N Funcionais\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ServicosSteps.valido_que_estou_na_tela_de(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          },
+          {
+            "name": "@MENUSERVICOS"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T02:11:37.736Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6640039800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Clicar no menu servicos e no submenu testes automatizados e validar a pagina",
+        "description": "",
+        "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais;clicar-no-menu-servicos-e-no-submenu-testes-automatizados-e-validar-a-pagina;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 794017100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 65128600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na home",
+            "match": {
+              "location": "HomeSteps.que_estou_na_home()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 72672700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no menu servicos",
+            "match": {
+              "location": "ServicosSteps.clico_no_menu_servicos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 4637612100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "no submenu \"Testes Manuais\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testes Manuais\"",
+                  "offset": 11
+                }
+              ],
+              "location": "ServicosSteps.no_submenu(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.Exception: Erro ao validar Tela\r\n\tat web.actions.ServicosAction.validarTela(ServicosAction.java:37)\r\n\tat web.steps.ServicosSteps.valido_que_estou_na_tela_de(ServicosSteps.java:25)\r\n\tat ✽.valido que estou na tela de \"//Testes Manuais\"(file:src/test/resources/features/servicos.feature:14)\r\n",
+              "duration": 92331421700,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "valido que estou na tela de \"//Testes Manuais\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//Testes Manuais\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ServicosSteps.valido_que_estou_na_tela_de(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          },
+          {
+            "name": "@MENUSERVICOS"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T02:13:22.288Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8412662500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Clicar no menu servicos e no submenu testes automatizados e validar a pagina",
+        "description": "",
+        "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais;clicar-no-menu-servicos-e-no-submenu-testes-automatizados-e-validar-a-pagina;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 699031100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 105256200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na home",
+            "match": {
+              "location": "HomeSteps.que_estou_na_home()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 74030200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no menu servicos",
+            "match": {
+              "location": "ServicosSteps.clico_no_menu_servicos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 5171312700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "no submenu \"Testes Mobile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testes Mobile\"",
+                  "offset": 11
+                }
+              ],
+              "location": "ServicosSteps.no_submenu(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/h1[contains(text(),\u0027//Testes Mobile\u0027)]\"}\n  (Session info: chrome\u003d88.0.4324.190)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-CFU3QO9\u0027, ip: \u0027192.168.15.189\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\DELL\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e08687635a89f9b06ba2be39f6c3252d\n*** Element info: {Using\u003dxpath, value\u003d//div/h1[contains(text(),\u0027//Testes Mobile\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat web.actions.ServicosAction.validarTela(ServicosAction.java:31)\r\n\tat web.steps.ServicosSteps.valido_que_estou_na_tela_de(ServicosSteps.java:25)\r\n\tat ✽.valido que estou na tela de \"//Testes Mobile\"(file:src/test/resources/features/servicos.feature:14)\r\n",
+              "duration": 5280289200,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "valido que estou na tela de \"//Testes Mobile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//Testes Mobile\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ServicosSteps.valido_que_estou_na_tela_de(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          },
+          {
+            "name": "@MENUSERVICOS"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T02:13:42.041Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10504491300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Clicar no menu servicos e no submenu testes automatizados e validar a pagina",
+        "description": "",
+        "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais;clicar-no-menu-servicos-e-no-submenu-testes-automatizados-e-validar-a-pagina;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 763640700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 67428000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na home",
+            "match": {
+              "location": "HomeSteps.que_estou_na_home()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 112676300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no menu servicos",
+            "match": {
+              "location": "ServicosSteps.clico_no_menu_servicos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027Fabrica de Testes\u0027)]\"}\n  (Session info: chrome\u003d88.0.4324.190)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-CFU3QO9\u0027, ip: \u0027192.168.15.189\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\DELL\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63556}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e3469915b0921339bcbcafa52e3d1c60\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(text(),\u0027Fabrica de Testes\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat web.actions.ServicosAction.clicarSubMenu(ServicosAction.java:26)\r\n\tat web.steps.ServicosSteps.no_submenu(ServicosSteps.java:20)\r\n\tat ✽.no submenu \"Fabrica de Testes\"(file:src/test/resources/features/servicos.feature:13)\r\n",
+              "duration": 19434800,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "no submenu \"Fabrica de Testes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fabrica de Testes\"",
+                  "offset": 11
+                }
+              ],
+              "location": "ServicosSteps.no_submenu(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 330000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "valido que estou na tela de \"//Fabrica de Testes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//Fabrica de Testes\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ServicosSteps.valido_que_estou_na_tela_de(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          },
+          {
+            "name": "@MENUSERVICOS"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T02:13:53.517Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6424872400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Clicar no menu servicos e no submenu testes automatizados e validar a pagina",
+        "description": "",
+        "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais;clicar-no-menu-servicos-e-no-submenu-testes-automatizados-e-validar-a-pagina;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 695209500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 110803200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na home",
+            "match": {
+              "location": "HomeSteps.que_estou_na_home()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 67388400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no menu servicos",
+            "match": {
+              "location": "ServicosSteps.clico_no_menu_servicos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 3491948800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "no submenu \"Consultoria\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Consultoria\"",
+                  "offset": 11
+                }
+              ],
+              "location": "ServicosSteps.no_submenu(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/h1[contains(text(),\u0027//Consultoria\u0027)]\"}\n  (Session info: chrome\u003d88.0.4324.190)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-CFU3QO9\u0027, ip: \u0027192.168.15.189\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\DELL\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 75f6abaae9eefb9d05f201872d70eaf8\n*** Element info: {Using\u003dxpath, value\u003d//div/h1[contains(text(),\u0027//Consultoria\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat web.actions.ServicosAction.validarTela(ServicosAction.java:31)\r\n\tat web.steps.ServicosSteps.valido_que_estou_na_tela_de(ServicosSteps.java:25)\r\n\tat ✽.valido que estou na tela de \"//Consultoria\"(file:src/test/resources/features/servicos.feature:14)\r\n",
+              "duration": 29729086500,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "valido que estou na tela de \"//Consultoria\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//Consultoria\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ServicosSteps.valido_que_estou_na_tela_de(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          },
+          {
+            "name": "@MENUSERVICOS"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T02:14:34.046Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8983219300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Clicar no menu servicos e no submenu testes automatizados e validar a pagina",
+        "description": "",
+        "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais;clicar-no-menu-servicos-e-no-submenu-testes-automatizados-e-validar-a-pagina;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 678222300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60921400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na home",
+            "match": {
+              "location": "HomeSteps.que_estou_na_home()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 65809700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no menu servicos",
+            "match": {
+              "location": "ServicosSteps.clico_no_menu_servicos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 5721314100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "no submenu \"Crowdsourced Auditeste\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Crowdsourced Auditeste\"",
+                  "offset": 11
+                }
+              ],
+              "location": "ServicosSteps.no_submenu(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/h1[contains(text(),\u0027//Crowdsourced Auditeste\u0027)]\"}\n  (Session info: chrome\u003d88.0.4324.190)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-CFU3QO9\u0027, ip: \u0027192.168.15.189\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\DELL\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ade01745754dc5fb77b36c0ae6ca1df3\n*** Element info: {Using\u003dxpath, value\u003d//div/h1[contains(text(),\u0027//Crowdsourced Auditeste\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat web.actions.ServicosAction.validarTela(ServicosAction.java:31)\r\n\tat web.steps.ServicosSteps.valido_que_estou_na_tela_de(ServicosSteps.java:25)\r\n\tat ✽.valido que estou na tela de \"//Crowdsourced Auditeste\"(file:src/test/resources/features/servicos.feature:14)\r\n",
+              "duration": 5170967400,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "valido que estou na tela de \"//Crowdsourced Auditeste\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//Crowdsourced Auditeste\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ServicosSteps.valido_que_estou_na_tela_de(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          },
+          {
+            "name": "@MENUSERVICOS"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T02:14:54.734Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7510466700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Clicar no menu servicos e no submenu testes automatizados e validar a pagina",
+        "description": "",
+        "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais;clicar-no-menu-servicos-e-no-submenu-testes-automatizados-e-validar-a-pagina;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 1317869300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 55114600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na home",
+            "match": {
+              "location": "HomeSteps.que_estou_na_home()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 63140700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no menu servicos",
+            "match": {
+              "location": "ServicosSteps.clico_no_menu_servicos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027Alocacao de Profissionais\u0027)]\"}\n  (Session info: chrome\u003d88.0.4324.190)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-CFU3QO9\u0027, ip: \u0027192.168.15.189\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\DELL\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 53137ea54917da2cf377399da59d475d\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(text(),\u0027Alocacao de Profissionais\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat web.actions.ServicosAction.clicarSubMenu(ServicosAction.java:26)\r\n\tat web.steps.ServicosSteps.no_submenu(ServicosSteps.java:20)\r\n\tat ✽.no submenu \"Alocacao de Profissionais\"(file:src/test/resources/features/servicos.feature:13)\r\n",
+              "duration": 14749200,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "no submenu \"Alocacao de Profissionais\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Alocacao de Profissionais\"",
+                  "offset": 11
+                }
+              ],
+              "location": "ServicosSteps.no_submenu(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 285200,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "valido que estou na tela de \"//Alocacao de Profissionais\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//Alocacao de Profissionais\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ServicosSteps.valido_que_estou_na_tela_de(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          },
+          {
+            "name": "@MENUSERVICOS"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T02:15:03.701Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6908284800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Clicar no menu servicos e no submenu testes automatizados e validar a pagina",
+        "description": "",
+        "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais;clicar-no-menu-servicos-e-no-submenu-testes-automatizados-e-validar-a-pagina;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 669325500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 62065300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na home",
+            "match": {
+              "location": "HomeSteps.que_estou_na_home()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 114186900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no menu servicos",
+            "match": {
+              "location": "ServicosSteps.clico_no_menu_servicos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027Automacao de Processos\u0027)]\"}\n  (Session info: chrome\u003d88.0.4324.190)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-CFU3QO9\u0027, ip: \u0027192.168.15.189\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\DELL\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64298}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c808bc35f8aebcdfe78b4afee6f93102\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(text(),\u0027Automacao de Processos\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat web.actions.ServicosAction.clicarSubMenu(ServicosAction.java:26)\r\n\tat web.steps.ServicosSteps.no_submenu(ServicosSteps.java:20)\r\n\tat ✽.no submenu \"Automacao de Processos\"(file:src/test/resources/features/servicos.feature:13)\r\n",
+              "duration": 26078200,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "no submenu \"Automacao de Processos\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Automacao de Processos\"",
+                  "offset": 11
+                }
+              ],
+              "location": "ServicosSteps.no_submenu(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 494900,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "valido que estou na tela de \"//Automacaoo de Processos\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//Automacaoo de Processos\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ServicosSteps.valido_que_estou_na_tela_de(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          },
+          {
+            "name": "@MENUSERVICOS"
           }
         ]
       }
     ],
-    "name": "Adicionar um item ao carrinho",
-    "description": "\r\nComo um usuario \r\nGostaria de pesquisar um iten\r\nE adicionar esse item ao carrinho",
-    "id": "adicionar-um-item-ao-carrinho",
+    "name": "Validar se o menu servicos e os submenus estao funcionais",
+    "description": "  Como um usuario \n  Gostaria de abrir cada menu servicos",
+    "id": "validar-se-o-menu-servicos-e-os-submenus-estao-funcionais",
     "keyword": "Funcionalidade",
-    "uri": "compras.feature",
+    "uri": "file:src/test/resources/features/servicos.feature",
     "tags": [
       {
-        "line": 2,
-        "name": "@funcionais"
+        "name": "@funcionais",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
       }
     ]
   }

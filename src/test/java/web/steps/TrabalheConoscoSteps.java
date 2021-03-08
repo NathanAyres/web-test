@@ -11,11 +11,6 @@ import web.core.Utils;
 public class TrabalheConoscoSteps {
 	TrabalheConoscoAction contato = new TrabalheConoscoAction(ThreadDriver.getTDriver());
 		
-		
-		@Dado("^que estou na home$")
-		public void que_estou_na_home() throws Throwable {
-			contato.fecharPopUp();
-		}
 	
 		@Quando("^clico no menu trabalhe conosco$")
 		public void valido_a_pesquisa() throws Throwable {

@@ -11,11 +11,6 @@ import web.core.Utils;
 public class QuemSomosSteps {
 	QuemSomosAction contato = new QuemSomosAction(ThreadDriver.getTDriver());
 		
-		
-		@Dado("^que estou na home$")
-		public void que_estou_na_home() throws Throwable {
-			contato.fecharPopUp();
-		}
 	
 		@Quando("^clico no menu quem somos$")
 		public void valido_a_pesquisa() throws Throwable {

@@ -1,7 +1,7 @@
 package web.steps;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import web.core.DriverFactory;
 import web.core.IBrowser;
 import web.core.ThreadDriver;
@@ -16,7 +16,7 @@ public class Hooks {
 
 	}
 
-	@After(order = 0, value = { "@COMPRAS" })
+	@After()
 	public void fecharBrowser() {
 		ThreadDriver.getTDriver().quit();
 		System.out.println("terminando");

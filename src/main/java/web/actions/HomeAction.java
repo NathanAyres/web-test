@@ -11,8 +11,8 @@ public class HomeAction extends BaseActions{
 	}
 	
 	public void fecharPopUp() {
-		//WebElement popUp = driver.findElement(By.id("menu-item-130"));NÃO TEM ID
-		//popUp.click();
+		WebElement popUp = driver.findElement(By.xpath("//*[@id=\"sgpb-popup-dialog-main-div-wrapper\"]/div/img"));
+		popUp.click();
 
 	}
 	

@@ -12,12 +12,6 @@ import web.core.Utils;
 public class CasesDeSucessoSteps {
 	
 	CasesDeSucessoAction contato = new CasesDeSucessoAction(ThreadDriver.getTDriver());
-		
-		
-		@Dado("^que estou na home$")
-		public void que_estou_na_home() throws Throwable {
-			contato.fecharPopUp();
-		}
 
 		@Quando("^clico no menu cases de sucesso$")
 		public void valido_a_pesquisa() throws Throwable {

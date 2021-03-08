@@ -3,68 +3,26 @@
 Funcionalidade: Validar se o menu servicos e os submenus estao funcionais
   
   Como um usuario 
-  Gostaria de abrir menu servicos
-  E validar se a pagina subsequente e de contato
+  Gostaria de abrir cada menu servicos
+ 
 
   @MENUSERVICOS
-  Cenario: Clicar no menu servicos e no submenu testes automatizados e validar a pagina
+    Esquema do Cenario: Clicar no menu servicos e no submenu testes automatizados e validar a pagina
   	Dado que estou na home 
   	Quando clico no menu servicos
-  	E no submenu testes automatizados
-  	Entao valido que estou na tela de testes automatizados
+  	E no submenu "<submenu>"
+  	Entao valido que estou na tela de "<tela>"
   	
+  	Exemplos:
   	
-  	Cenario: Clicar no menu servicos e no submenu testes funcionais nao funcionais e validar a pagina
-  	Dado que estou na home 
-  	Quando clico no menu servicos
-  	E no submenu testes funcionais nao funcionais
-  	Entao valido que estou na tela de testes funcionais nao funcionais
-  	
-  	
-  	Cenario: Clicar no menu servicos e no submenu testes manuais e validar a pagina
-  	Dado que estou na home 
-  	Quando clico no menu servicos
-  	E no submenu testes manuais
-  	Entao valido que estou na tela de testes manuais
-  	
-  	
-  	Cenario: Clicar no menu servicos e no submenu testes mobile e validar a pagina
-  	Dado que estou na home 
-  	Quando clico no menu servicos
-  	E no submenu testes mobile
-  	Entao valido que estou na tela de testes mobile
-  	
-  	
-  	Cenario: Clicar no menu servicos e no submenu fabrica de testes e validar a pagina
-  	Dado que estou na home 
-  	Quando clico no menu servicos
-  	E no submenu fabrica de testes
-  	Entao valido que estou na tela fabrica de testes
-  	
-  	
-  	Cenario: Clicar no menu servicos e no submenu consultoria e validar a pagina
-  	Dado que estou na home 
-  	Quando clico no menu servicos
-  	E no submenu consultoria
-  	Entao valido que estou na tela de consultoria
-  	
-  	
-  	Cenario: Clicar no menu servicos e no submenu crowdsourced auditeste e validar a pagina
-  	Dado que estou na home 
-  	Quando clico no menu servicos
-  	E no submenu crowdsourced auditeste
-  	Entao valido que estou na tela de crowdsourced auditeste
-  	
-  	
-  	Cenario: Clicar no menu servicos e no submenu alocacao de profissionais e validar a pagina
-  	Dado que estou na home 
-  	Quando clico no menu servicos
-  	E no submenu alocacao de profissionais
-  	Entao valido que estou na tela de alocacao de profissionais
-  	
-  	
-  	Cenario: Clicar no menu servicos e no submenu automacao de processos e validar a pagina
-  	Dado que estou na home 
-  	Quando clico no menu servicos
-  	E no submenu automacao de processos
-  	Entao valido que estou na tela de automacao de processos
+  	|submenu                         | tela                                |
+    |Testes Automatizados            |  //Testes Automatizados             |
+  	|Testes Funcionais N Funcionais  |  //Testes Funcionais N Funcionais   |
+  	|Testes Manuais                  |  //Testes Manuais                   |
+  	|Testes Mobile                   |  //Testes Mobile                    |
+  	|Fabrica de Testes               |  //Fabrica de Testes                |
+  	|Consultoria                     |  //Consultoria                      |
+  	|Crowdsourced Auditeste          |  //Crowdsourced Auditeste           |
+  	|Alocacao de Profissionais       |  //Alocacao de Profissionais        |
+  	|Automacao de Processos          |  //Automacaoo de Processos           |
+	
