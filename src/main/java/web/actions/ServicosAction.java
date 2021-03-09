@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import junit.framework.AssertionFailedError;
 import web.core.ThreadDriver;
@@ -22,13 +23,16 @@ public class ServicosAction extends BaseActions{
 		menuServicos.click();
 
 	}
-	public void clicarSubMenu(String string) {
-		WebElement subMenu = driver.findElement(By.xpath("//a[contains(text(),'"+string+"')]"));
+	public void clicarSubMenu(String string) throws Exception {
+		String xpath = "//a[contains(text(),'"+string+"')]";
+		WebElement subMenu = driver.findElement(By.xpath(xpath));
+		Thread.sleep(1500);
 		subMenu.click();
 	}
 
 	public void validarTela(String string) throws Exception {
 		WebElement labelTela = driver.findElement(By.xpath("//div/h1[contains(text(),'"+string+"')]"));
+		Thread.sleep(1000);
 		String tela = labelTela.getText();
 		string.toUpperCase();
 		string = string.toUpperCase();

@@ -9,17 +9,17 @@ import web.core.ThreadDriver;
 import web.core.Utils;
 
 public class TrabalheConoscoSteps {
-	TrabalheConoscoAction contato = new TrabalheConoscoAction(ThreadDriver.getTDriver());
+	TrabalheConoscoAction trabalheConosco = new TrabalheConoscoAction(ThreadDriver.getTDriver());
 		
 	
 		@Quando("^clico no menu trabalhe conosco$")
-		public void valido_a_pesquisa() throws Throwable {
-			contato.abrirMenu();
+		public void clico_no_menu_trabalhe_conosco() throws Throwable {
+			trabalheConosco.abrirMenu();
 		}
 		
 		@Entao("^valido que estou na trabalhe conosco$")
 		public void valido_que_estou_na_tela_de_contato() throws Throwable {
-			
+			trabalheConosco.validarTela("//TRABALHE CONOSCO");
 		}
 
 }

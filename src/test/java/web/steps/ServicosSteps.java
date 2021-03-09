@@ -16,7 +16,7 @@ public class ServicosSteps {
 	}
 	
 	@Quando("no submenu {string}")
-	public void no_submenu(String string) {
+	public void no_submenu(String string) throws Exception {
 		servicos.clicarSubMenu(string);
 	}
 
